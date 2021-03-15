@@ -1,0 +1,104 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "smsspamcollection_suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 6129,
+        "min_value": 5014
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_table_column_count_to_equal",
+      "kwargs": {
+        "value": 1
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "target\tsms\tsms_length\tkfold"
+        ]
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "target\tsms\tsms_length\tkfold"
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_value_lengths_to_be_between",
+      "kwargs": {
+        "column": "target\tsms\tsms_length\tkfold",
+        "min_value": 1
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    }
+  ],
+  "meta": {
+    "BasicSuiteBuilderProfiler": {
+      "batch_kwargs": {
+        "data_asset_name": "cleaned_data",
+        "datasource": "smsspamcollection",
+        "path": "C:\\Users\\MusahO\\Desktop\\smsspam\\data\\processed\\cleaned_data.csv"
+      },
+      "created_at": 1615757596.69546,
+      "created_by": "BasicSuiteBuilderProfiler"
+    },
+    "citations": [
+      {
+        "batch_kwargs": {
+          "data_asset_name": "cleaned_data",
+          "datasource": "smsspamcollection",
+          "path": "C:\\Users\\MusahO\\Desktop\\smsspam\\data\\processed\\cleaned_data.csv"
+        },
+        "batch_markers": {
+          "ge_load_time": "20210314T213314.482382Z",
+          "pandas_data_fingerprint": "af5bffcc24259286d808723747bbfb66"
+        },
+        "batch_parameters": null,
+        "citation_date": "20210314T213316.789459Z",
+        "comment": "BasicSuiteBuilderProfiler added a citation based on the current batch."
+      }
+    ],
+    "columns": {
+      "target\tsms\tsms_length\tkfold": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.13.13",
+    "notes": {
+      "content": [
+        "#### This is an _example_ suite\n\n- This suite was made by quickly glancing at 1000 rows of your data.\n- This is **not a production suite**. It is meant to show examples of expectations.\n- Because this suite was auto-generated using a very basic profiler that does not know your data like you do, many of the expectations may not be meaningful.\n"
+      ],
+      "format": "markdown"
+    }
+  }
+}

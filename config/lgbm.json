@@ -1,0 +1,10 @@
+{
+    "model": "lgbm",
+    "train_data_path": "data/processed/cleaned_data.csv",
+    "featurizer_output_path": "model_checkpoints/lgbm",
+    "model_output_path": "model_checkpoints/lgbm",
+    "evaluate": false,
+    "params": {
+
+    }
+}
